@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>
+Упражнение 5: вывести текущую дату и время, обновлять раз в секунду.
+</title>
+<style>
+#clock {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -20em;
+  margin-top: -4em;
+  width: 40em;
+  height: 4em;
+  background: dimGray;
+  border-radius: 5px
+}
+</style>
+<script>
+  /* этa функция должна вставить текущее время в div id=clock
+  */
+  function updateClock() {
+    var d = new Date();
+    alert(`It is ${d.toLocaleDateString()} ${d.toLocaleTimeString()}`);
+ // alert(`It is ${d.getHours()} ${d.getMinutes()} ${d.getSeconds()}`);
+  }
+  window.onload = function() {
+    updateClock();
+    setInterval(updateClock, 1500); // every 1500 ms
+  }
+</script>
+</head>
+<body>
+  <div id=clock></div>
+</body>
+</html>
