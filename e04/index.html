@@ -7,7 +7,7 @@
 </title>
 <style>
 .circle100 {
-  /* красный кружок r=50px */
+  /* красный кружок R=50px */
   width: 100px;
   height: 100px;
   background: red;
@@ -16,9 +16,9 @@
 </style>
 <script>
   /* этa функция должна добавить
-  <div class="circle100" id="c"+x+y></div>
-       var d = document.getById('c'++x+y);
-     и поменять его так:
+  <div class="circle100" id="x"+x+"y"+y></div>
+       var d = document.getById("x"+x+"y"+y);
+     и поменять ему:
        d.style.position = "absolute";
        d.style.left = (x - radius) + 'px';
        d.style.top = (y - radius) + 'px'
@@ -29,7 +29,7 @@
   window.onclick = function(evt) {
     // https://stackoverflow.com/questions/15536998/why-does-this-event-handler-use-e-e-event
     evt = evt || window.event;
-    var radius = 50;
+    const radius = 50;
     alert(`Position: (${evt.clientX}, ${evt.clientY})`);
     var x = 100; // исправить!
     var y = 200; // исправить!
