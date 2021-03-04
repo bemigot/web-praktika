@@ -27,21 +27,14 @@
     const obj = document.getElementById('square');
     window.addEventListener("keydown", event => {
       let kp = 'E';
-      switch (event.keyCode) {
-        case 68:
-          kp = 'd';
-          break;
-        case 83:
-          kp = 's';
-          break;
-        case 65:
-          kp = 'a';
-          break;
-        case 87:
-          kp = 'w';
-          break;
+      switch (event.key) {
+        case 'd':
+        case 's':
+        case 'a':
+        case 'w':
+          kp = event.key;
+          handleKey(obj, kp);
       }
-      handleKey(obj, kp);
     }, false);
   }
 </script>
