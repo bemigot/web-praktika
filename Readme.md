@@ -1,9 +1,9 @@
 ## deadline Mar. 06, 2021
 [source](https://docs.google.com/document/d/1VUNyqu8sM-GYreq7jM8Bns4srtrPYUSi)
 
-* One HTML page, шапка, 3 колонки, `<input>`, `button` подвал
-* One HTML page, шапка, text, подвал <a>, Собираем картинку с шахматами из 4 частей
-* Three HTML pages "online shop": start page, cart, item page
+* Страница HTML, [шапка](site1/index.html), [3 колонки](site1/text.html), [`<input>`, `button` подвал](site1/podval.html)
+* Страница HTML, шапка, текст, подвал <a>, Собираем картинку с шахматами из 4 частей
+* Три страницы HTML online магазина: стартовая, "корзина", карточка товара
 1. rise/lower object's opacity w/two buttons (увеличивает и уменьшает прозрачность объекта с использованием двух кнопок)
 1. hide object from viewpoint when hovering over it
 1. put a circle in a random place (see [this crap-let](https://www.html5canvastutorials.com/tutorials/html5-canvas-circles/))
